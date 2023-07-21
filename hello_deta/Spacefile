@@ -1,9 +1,0 @@
-# Spacefile Docs: https://go.deta.dev/docs/spacefile/v0
-v: 0
-micros:
-  - name: hellodeta
-    src: ./
-    engine: python3.9
-    primary: true
-    run: uvicorn hello_deta.asgi:application
-    dev: uvicorn hello_deta.asgi:application --reload
